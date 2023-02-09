@@ -16,13 +16,21 @@
     /* misure */
     --zoom-remsm: 0.5rem;
 }
+
 /* generic class */
 .d-flex {
     display: flex;
 }
+
 a {
     text-decoration: none;
 }
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
 /* #end region utilitys */
 /* start debug */
 /* .debug .fullscreen {
@@ -32,7 +40,7 @@ a {
 .debug .speaker_view {
     background-color: aqua;
 } */
-.debug .row{
+/* .debug .row{
     background-color: #cc1511;
 }
 .debug .col{
@@ -43,10 +51,10 @@ a {
 }
 .debug .name{
     background-color: yellow;
-}
+} */
 /* end debug */
 /* start header */
-body{
+body {
     background-color: var(--zoom-blackbakground);
 }
 
@@ -69,35 +77,88 @@ header a {
     font-size: 0.5rem;
     border-radius: 0.2rem;
 }
+
 /* end header */
-.row{
+.row {
     width: 100vw;
-    height: 80vh;
+    height: 88vh;
     padding: 2rem 5rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.col{
+
+.col {
     width: calc(100% / 7);
     height: calc(100% / 5);
     padding: 0.1rem;
 }
-.items{
+
+.items {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.col img{
+
+.col img {
     max-width: 100%;
     max-height: 100%;
     min-width: 100%;
     min-height: 100%;
 }
-.col .name{
+
+.col .name {
     background-color: var(--zoom-litegreyname);
     opacity: 80%;
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+/* footer */
+.footerbar {
+    background-color: var(--zoom-greyfooterbar);
+    height: 8vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons ul {
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.icons li {
+    padding: 0 0.5rem;
+}
+
+.icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.icons i {
+    padding: 0 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    background-color: var(--zoom-litegreybottom);
+    height: 100%;
+    text-align: center;
+
+}
+.end{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.end p{
+    color: var(--zoom-redbottom);
 }
